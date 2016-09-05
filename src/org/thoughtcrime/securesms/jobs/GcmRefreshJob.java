@@ -46,7 +46,8 @@ public class GcmRefreshJob extends ContextJob implements InjectableType {
 
   private static final String TAG = GcmRefreshJob.class.getSimpleName();
 
-  public static final String REGISTRATION_ID = "312334754206";
+  // Registration ID for Iris Encrypted Messenger
+  public static final String REGISTRATION_ID = "152987249589";
 
   @Inject transient SignalServiceAccountManager textSecureAccountManager;
   @Inject transient RedPhoneAccountManager      redPhoneAccountManager;
