@@ -17,18 +17,23 @@
 package org.thoughtcrime.securesms.util;
 
 import android.content.Context;
+import android.content.DialogInterface.OnClickListener;
 import android.support.v7.app.AlertDialog;
 
 import org.thoughtcrime.securesms.R;
 
 public class Dialogs {
-  public static void showAlertDialog(Context context, String title, String message) {
+  public static void showAlertDialog(Context context, String title, String message, final OnClickListener listener) {
     AlertDialog.Builder dialog = new AlertDialog.Builder(context);
     dialog.setTitle(title);
     dialog.setMessage(message);
     dialog.setIconAttribute(R.attr.dialog_alert_icon);
-    dialog.setPositiveButton(android.R.string.ok, null);
+    dialog.setPositiveButton(android.R.string.ok, listener);
     dialog.show();
+  }
+
+  public static void showAlertDialog(Context context, String title, String message) {
+    showAlertDialog(context, title, message, null);
   }
 
   public static void showInfoDialog(Context context, String title, String message) {
