@@ -49,7 +49,8 @@ public class ConfirmIdentityDialog extends AlertDialog {
     super(context);
     Recipient       recipient       = RecipientFactory.getRecipientForId(context, mismatch.getRecipientId(), false);
     String          name            = recipient.toShortString();
-    String          introduction    = String.format(context.getString(R.string.ConfirmIdentityDialog_the_signature_on_this_key_exchange_is_different), name, name);
+    String          introduction    = context.getString(R.string.ConfirmIdentityDialog_the_signature_on_this_key_exchange_is_different,
+                                                          name, name, context.getString(R.string.app_name));
     SpannableString spannableString = new SpannableString(introduction + " " +
                                                           context.getString(R.string.ConfirmIdentityDialog_you_may_wish_to_verify_this_contact));
 

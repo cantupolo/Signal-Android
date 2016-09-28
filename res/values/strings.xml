@@ -23,17 +23,17 @@
     </plurals>
     <string name="ApplicationPreferencesActivity_delete">Delete</string>
     <string name="ApplicationPreferencesActivity_disable_passphrase">Disable passphrase?</string>
-    <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">This will permanently unlock Signal and message notifications.</string>
+    <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">This will permanently unlock %s and message notifications.</string>
     <string name="ApplicationPreferencesActivity_disable">Disable</string>
     <string name="ApplicationPreferencesActivity_unregistering">Unregistering</string>
-    <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Unregistering from Signal messages and calls...</string>
-    <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Disable Signal messages and calls?</string>
-    <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Disable Signal messages and calls by unregistering from the server. You will need to re-register your phone number to use them again in the future.</string>
+    <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Unregistering from %s messages and calls...</string>
+    <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Disable %s messages and calls?</string>
+    <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Disable %1$s messages and calls by unregistering from the server. You will need to re-register your phone number to use %2$s again in the future.</string>
     <string name="ApplicationPreferencesActivity_error_connecting_to_server">Error connecting to server!</string>
     <string name="ApplicationPreferencesActivity_sms_enabled">SMS Enabled</string>
     <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Touch to change your default SMS app</string>
     <string name="ApplicationPreferencesActivity_sms_disabled">SMS Disabled</string>
-    <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Touch to make Signal your default SMS app</string>
+    <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Touch to make %s your default SMS app</string>
     <string name="ApplicationPreferencesActivity_on">on</string>
     <string name="ApplicationPreferencesActivity_On">On</string>
     <string name="ApplicationPreferencesActivity_off">off</string>
@@ -76,7 +76,7 @@
     <!-- ConfirmIdentityDialog -->
     <string name="ConfirmIdentityDialog_the_signature_on_this_key_exchange_is_different">The
         identifying key material for %1$s has changed. This could either mean that someone is trying to
-        intercept your communication, or that %2$s simply re-installed Signal and now has a new
+        intercept your communication, or that %2$s simply re-installed %3$s and now has a new
         identity key.
     </string>
     <string name="ConfirmIdentityDialog_you_may_wish_to_verify_this_contact">You may wish to verify
@@ -86,7 +86,7 @@
 
     <!-- ContactsDatabase -->
     <string name="ContactsDatabase_message_s">Message %s</string>
-    <string name="ContactsDatabase_signal_call_s">Signal Call %s</string>
+    <string name="ContactsDatabase_signal_call_s">%1$s Call %2$s</string>
 
     <!-- ConversationItem -->
     <string name="ConversationItem_message_size_d_kb">Message size: %d KB</string>
@@ -101,7 +101,7 @@
     <string name="ConversationItem_click_to_approve_unencrypted">Tap for unsecured fallback</string>
     <string name="ConversationItem_click_to_approve_unencrypted_sms_dialog_title">Fallback to unencrypted SMS?</string>
     <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">Fallback to unencrypted MMS?</string>
-    <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">This message will <b>not</b> be encrypted because the recipient is no longer a Signal user.\n\nSend unsecured message?</string>
+    <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">This message will <b>not</b> be encrypted because the recipient is no longer a %s user.\n\nSend unsecured message?</string>
     <string name="ConversationItem_unable_to_open_media">Can\'t find an app able to open this media.</string>
     <string name="ConversationItem_from_s">from %s</string>
     <string name="ConversationItem_to_s">to %s</string>

@@ -226,7 +226,8 @@ public class ContactsDatabase {
                                            .withValue(ContactsContract.Data.MIMETYPE, CALL_MIMETYPE)
                                            .withValue(ContactsContract.Data.DATA1, e164number)
                                            .withValue(ContactsContract.Data.DATA2, context.getString(R.string.app_name))
-                                           .withValue(ContactsContract.Data.DATA3, context.getString(R.string.ContactsDatabase_signal_call_s, e164number))
+                                           .withValue(ContactsContract.Data.DATA3, context.getString(R.string.ContactsDatabase_signal_call_s,
+                                                   context.getString(R.string.app_name), e164number))
                                            .withYieldAllowed(true)
                                            .build());
   }
@@ -283,7 +284,8 @@ public class ContactsDatabase {
                                              .withValue(ContactsContract.Data.MIMETYPE, CALL_MIMETYPE)
                                              .withValue(ContactsContract.Data.DATA1, e164number)
                                              .withValue(ContactsContract.Data.DATA2, context.getString(R.string.app_name))
-                                             .withValue(ContactsContract.Data.DATA3, context.getString(R.string.ContactsDatabase_signal_call_s, e164number))
+                                             .withValue(ContactsContract.Data.DATA3, context.getString(R.string.ContactsDatabase_signal_call_s,
+                                                     context.getString(R.string.app_name), e164number))
                                              .withYieldAllowed(true)
                                              .build());
     }

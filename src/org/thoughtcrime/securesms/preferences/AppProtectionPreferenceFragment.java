@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.doomonafireball.betterpickers.hmspicker.HmsPickerBuilder;
 import com.doomonafireball.betterpickers.hmspicker.HmsPickerDialogFragment;
 
+import org.thoughtcrime.securesms.AppStringFormat;
 import org.thoughtcrime.securesms.ApplicationPreferencesActivity;
 import org.thoughtcrime.securesms.BlockedContactsActivity;
 import org.thoughtcrime.securesms.PassphraseChangeActivity;
@@ -138,7 +139,8 @@ public class AppProtectionPreferenceFragment extends PreferenceFragment {
       if (((CheckBoxPreference)preference).isChecked()) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(R.string.ApplicationPreferencesActivity_disable_passphrase);
-        builder.setMessage(R.string.ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications);
+        builder.setMessage(AppStringFormat.format(getActivity(),
+                R.string.ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications));
         builder.setIconAttribute(R.attr.dialog_alert_icon);
         builder.setPositiveButton(R.string.ApplicationPreferencesActivity_disable, new DialogInterface.OnClickListener() {
           @Override

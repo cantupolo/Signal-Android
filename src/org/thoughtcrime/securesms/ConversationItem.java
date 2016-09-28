@@ -635,7 +635,7 @@ public class ConversationItem extends LinearLayout
     AlertDialog.Builder builder = new AlertDialog.Builder(context);
     builder.setTitle(title);
 
-    if (message > -1) builder.setMessage(message);
+    if (message > -1) builder.setMessage(AppStringFormat.format(context, message));
 
     builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
       @Override

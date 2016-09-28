@@ -22,6 +22,7 @@ import com.google.android.gms.gcm.GoogleCloudMessaging;
 import org.thoughtcrime.redphone.signaling.RedPhoneAccountManager;
 import org.thoughtcrime.redphone.signaling.RedPhoneTrustStore;
 import org.thoughtcrime.redphone.signaling.UnauthorizedException;
+import org.thoughtcrime.securesms.AppStringFormat;
 import org.thoughtcrime.securesms.ApplicationPreferencesActivity;
 import org.thoughtcrime.securesms.BuildConfig;
 import org.thoughtcrime.securesms.LogSubmitActivity;
@@ -31,8 +32,8 @@ import org.thoughtcrime.securesms.contacts.ContactAccessor;
 import org.thoughtcrime.securesms.contacts.ContactIdentityManager;
 import org.thoughtcrime.securesms.crypto.MasterSecret;
 import org.thoughtcrime.securesms.push.TextSecureCommunicationFactory;
-import org.thoughtcrime.securesms.util.task.ProgressDialogAsyncTask;
 import org.thoughtcrime.securesms.util.TextSecurePreferences;
+import org.thoughtcrime.securesms.util.task.ProgressDialogAsyncTask;
 import org.whispersystems.libsignal.util.guava.Optional;
 import org.whispersystems.signalservice.api.SignalServiceAccountManager;
 import org.whispersystems.signalservice.api.push.exceptions.AuthorizationFailedException;
@@ -164,7 +165,9 @@ public class AdvancedPreferenceFragment extends PreferenceFragment {
       private final CheckBoxPreference checkBoxPreference;
 
       public DisablePushMessagesTask(final CheckBoxPreference checkBoxPreference) {
-        super(getActivity(), R.string.ApplicationPreferencesActivity_unregistering, R.string.ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls);
+        super(getActivity(), getActivity().getString(R.string.ApplicationPreferencesActivity_unregistering),
+                AppStringFormat.format(getActivity(),
+                        R.string.ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls));
         this.checkBoxPreference = checkBoxPreference;
       }
 
@@ -221,8 +224,12 @@ public class AdvancedPreferenceFragment extends PreferenceFragment {
       if (((CheckBoxPreference)preference).isChecked()) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setIconAttribute(R.attr.dialog_info_icon);
-        builder.setTitle(R.string.ApplicationPreferencesActivity_disable_signal_messages_and_calls);
-        builder.setMessage(R.string.ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering);
+        builder.setTitle(AppStringFormat.format(getActivity(),
+                R.string.ApplicationPreferencesActivity_disable_signal_messages_and_calls));
+        builder.setMessage(getActivity().getString(
+                R.string.ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering,
+                getActivity().getString(R.string.app_name), getActivity().getString(R.string.app_name)));
+
         builder.setNegativeButton(android.R.string.cancel, null);
         builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
           @Override

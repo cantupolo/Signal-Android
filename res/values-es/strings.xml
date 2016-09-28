@@ -21,17 +21,17 @@
   </plurals>
   <string name="ApplicationPreferencesActivity_delete">Eliminar</string>
   <string name="ApplicationPreferencesActivity_disable_passphrase">¿Deshabilitar clave de acceso?</string>
-  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Esto desbloqueará permanentemente Signal y las notificaciones de mensaje.</string>
+  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Esto desbloqueará permanentemente %s y las notificaciones de mensaje.</string>
   <string name="ApplicationPreferencesActivity_disable">Desactivar</string>
   <string name="ApplicationPreferencesActivity_unregistering">Desregistrándose</string>
-  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Borrando cuenta Signal...</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">¿Deshabilitar mensajes y llamadas de Signal?</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Esto deshabilitará los mensajes de Signal eliminándole del servidor. Necesitará volver a registrar su número de teléfono para usar mensajes de Signal de nuevo en el futuro.</string>
+  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Borrando cuenta %s...</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">¿Deshabilitar mensajes y llamadas de %s?</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Esto deshabilitará los mensajes de %1$s eliminándole del servidor. Necesitará volver a registrar su número de teléfono para usar mensajes de %2$s de nuevo en el futuro.</string>
   <string name="ApplicationPreferencesActivity_error_connecting_to_server">¡Error conectando al servidor!</string>
   <string name="ApplicationPreferencesActivity_sms_enabled">SMS habilitados</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Pulse para cambiar la aplicación de SMS predeterminada</string>
   <string name="ApplicationPreferencesActivity_sms_disabled">SMS deshabilitados</string>
-  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Pulse para hacer de Signal su aplicación de SMS predeterminada</string>
+  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Pulse para hacer de %s su aplicación de SMS predeterminada</string>
   <string name="ApplicationPreferencesActivity_on">activo</string>
   <string name="ApplicationPreferencesActivity_On">Activo</string>
   <string name="ApplicationPreferencesActivity_off">inactivo</string>
@@ -66,7 +66,7 @@
   <!--ConfirmIdentityDialog-->
   <string name="ConfirmIdentityDialog_the_signature_on_this_key_exchange_is_different">El
 material de la clave identificadora para %1$s ha cambiado. Esto podría bien significar que alguien está intentando
-interceptar su comunicación, o que %2$s simplemente reinstaló Signal y ahora tiene una nueva
+interceptar su comunicación, o que %2$s simplemente reinstaló %3$s y ahora tiene una nueva
 clave identificadora.</string>
   <string name="ConfirmIdentityDialog_you_may_wish_to_verify_this_contact">Puede que dese verificar
 este contacto.
@@ -74,7 +74,7 @@ este contacto.
   <string name="ConfirmIdentityDialog_accept">Aceptar</string>
   <!--ContactsDatabase-->
   <string name="ContactsDatabase_message_s">Mensaje %s</string>
-  <string name="ContactsDatabase_signal_call_s">Llamar a %s con Signal</string>
+  <string name="ContactsDatabase_signal_call_s">Llamar a %1$s con %2$s</string>
   <!--ConversationItem-->
   <string name="ConversationItem_message_size_d_kb">Tamaño del mensaje: %d KB</string>
   <string name="ConversationItem_expires_s">Expira: %s</string>
