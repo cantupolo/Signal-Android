@@ -103,10 +103,12 @@ public class GcmRefreshJob extends ContextJob implements InjectableType {
 
     builder.setSmallIcon(R.drawable.icon_notification);
     builder.setLargeIcon(BitmapFactory.decodeResource(context.getResources(),
-                                                      R.drawable.ic_action_warning_red));
-    builder.setContentTitle(context.getString(R.string.GcmRefreshJob_Permanent_Signal_communication_failure));
-    builder.setContentText(context.getString(R.string.GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services));
-    builder.setTicker(context.getString(R.string.GcmRefreshJob_Permanent_Signal_communication_failure));
+            R.drawable.ic_action_warning_red));
+    final String appName = context.getString(R.string.app_name);
+    builder.setContentTitle(context.getString(R.string.GcmRefreshJob_Permanent_Signal_communication_failure, appName));
+    builder.setContentText(context.getString(
+            R.string.GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services, appName, appName));
+    builder.setTicker(context.getString(R.string.GcmRefreshJob_Permanent_Signal_communication_failure, appName));
     builder.setVibrate(new long[] {0, 1000});
     builder.setContentIntent(pendingIntent);
 

@@ -21,10 +21,12 @@ public class DeviceProvisioningActivity extends PassphraseRequiredActionBarActiv
   @Override
   protected void onCreate(Bundle bundle, @NonNull MasterSecret masterSecret) {
     getSupportActionBar().hide();
+    String appName = getString(R.string.app_name);
 
     AlertDialog dialog = new AlertDialog.Builder(this)
         .setTitle(getString(R.string.DeviceProvisioningActivity_link_a_signal_device))
-        .setMessage(getString(R.string.DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner))
+        .setMessage(getString(R.string.DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner,
+                appName, appName))
         .setPositiveButton(R.string.DeviceProvisioningActivity_continue, new DialogInterface.OnClickListener() {
           @Override
           public void onClick(DialogInterface dialog, int which) {

@@ -123,7 +123,7 @@ este contacto.
   <string name="ConversationActivity_transport_insecure_sms">SMS no seguro</string>
   <string name="ConversationActivity_transport_insecure_mms">MMS no seguro</string>
   <string name="ConversationActivity_transport_signal">Signal</string>
-  <string name="ConversationActivity_lets_switch_to_signal">Pasémonos a Signal: %1$s</string>
+  <string name="ConversationActivity_lets_switch_to_signal">Pasémonos a %2$s: %1$s</string>
   <string name="ConversationActivity_lets_use_this_to_chat">Usemos esto para hablar: %1$s</string>
   <string name="ConversationActivity_error_leaving_group">Error al dejar el grupo...</string>
   <string name="ConversationActivity_mms_not_supported_title">MMS no admitidos</string>
@@ -235,7 +235,7 @@ Recibido:%4$s</string>
   <!--ExportFragment-->
   <string name="ExportFragment_export">Exportar</string>
   <string name="ExportFragment_export_plaintext_to_storage">¿Exportar texto plano al almacenamiento?</string>
-  <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Atención, esto exportará el contenido en texto plano de sus mensajes de Signal a almacenamiento.</string>
+  <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Atención, esto exportará el contenido en texto plano de sus mensajes de %s a almacenamiento.</string>
   <string name="ExportFragment_cancel">Cancelar</string>
   <string name="ExportFragment_exporting">Exportando</string>
   <string name="ExportFragment_exporting_plaintext_to_storage">Exportando texto plano a almacenamiento...</string>
@@ -243,15 +243,15 @@ Recibido:%4$s</string>
   <string name="ExportFragment_error_while_writing_to_storage">Error al escribir en almacenamiento.</string>
   <string name="ExportFragment_export_successful">Exportación satisfactoria.</string>
   <!--GcmRefreshJob-->
-  <string name="GcmRefreshJob_Permanent_Signal_communication_failure">¡Fallo permanente de comunicación de Signal!</string>
-  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">Signal fué incapaz de registrarse con Google Play Services. Los mensajes y llamadas de Signal han sido desactivados, por favor, intenta registrarte otra vez en Configuración &gt; Avanzado.</string>
+  <string name="GcmRefreshJob_Permanent_Signal_communication_failure">¡Fallo permanente de comunicación de %s!</string>
+  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">%1$s fué incapaz de registrarse con Google Play Services. Los mensajes y llamadas de %1$s han sido desactivados, por favor, intenta registrarte otra vez en Configuración &gt; Avanzado.</string>
   <!--GroupCreateActivity-->
   <string name="GroupCreateActivity_actionbar_title">Nuevo grupo</string>
   <string name="GroupCreateActivity_actionbar_update_title">Actualizar grupo</string>
   <string name="GroupCreateActivity_group_name_hint">Nombre del grupo</string>
   <string name="GroupCreateActivity_actionbar_mms_title">Nuevo grupo de MMS</string>
-  <string name="GroupCreateActivity_contacts_dont_support_push">Ha seleccionado un contacto que no soporta grupos de Signal, así que este grupo será de MMS.</string>
-  <string name="GroupCreateActivity_youre_not_registered_for_signal">No estás registrado para los mensajes y llamadas de Signal, así que los grupos de Signal están desactivados, por favor, intenta registrarte otra vez en Configuración &gt; Avanzado.</string>
+  <string name="GroupCreateActivity_contacts_dont_support_push">Ha seleccionado un contacto que no soporta grupos de %s, así que este grupo será de MMS.</string>
+  <string name="GroupCreateActivity_youre_not_registered_for_signal">No estás registrado para los mensajes y llamadas de %1$s, así que los grupos de %2$s están desactivados, por favor, intenta registrarte otra vez en Configuración &gt; Avanzado.</string>
   <string name="GroupCreateActivity_contacts_mms_exception">Un error inesperado hizo fallar la creación del grupo.</string>
   <string name="GroupCreateActivity_contacts_no_members">¡Necesita al menos una persona en su grupo!</string>
   <string name="GroupCreateActivity_contacts_invalid_number">Uno de los miembros de su grupo tiene un número que no puede ser leído correctamente. Por favor arréglelo o elimine ese contacto, e inténtelo de nuevo.</string>
@@ -259,7 +259,7 @@ Recibido:%4$s</string>
   <string name="GroupCreateActivity_menu_create_title">Crear grupo</string>
   <string name="GroupCreateActivity_creating_group">Creando %1$s…</string>
   <string name="GroupCreateActivity_updating_group">Actualizando %1$s...</string>
-  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">No se ha podido agregar a %1$s porque no es usuario de Signal.</string>
+  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">No se ha podido agregar a %1$s porque no es usuario de %2$s.</string>
   <string name="GroupCreateActivity_loading_group_details">Cargando detalles del grupo...</string>
   <string name="GroupCreateActivity_youre_already_in_the_group">Ya está en el grupo.</string>
   <!--GroupMembersDialog-->
@@ -270,14 +270,14 @@ Recibido:%4$s</string>
   <!--ImportFragment-->
   <string name="ImportFragment_import_system_sms_database">¿Importar base de datos de SMS del sistema?</string>
   <string name="ImportFragment_this_will_import_messages_from_the_system">Esto importará
-mensajes desde la base de datos de SMS predeterminada del sistema hacia Signal. Si previamente ha
+mensajes desde la base de datos de SMS predeterminada del sistema hacia %s. Si previamente ha
 importado la base de datos de SMS del sistema, importarla de nuevo resultará en mensajes duplicados.</string>
   <string name="ImportFragment_import">Importar</string>
   <string name="ImportFragment_cancel">Cancelar</string>
   <string name="ImportFragment_restore_encrypted_backup">¿Restaurar copia de seguridad cifrada?</string>
   <string name="ImportFragment_restoring_an_encrypted_backup_will_completely_replace_your_existing_keys">
 Restaurar una copia de seguridad cifrada reemplazará completamente sus claves existentes, preferencias, y
-mensajes. Perderá cualquier información que esté en su instalación actual de Signal pero no
+mensajes. Perderá cualquier información que esté en su instalación actual de %s pero no
 en la copia de seguridad.</string>
   <string name="ImportFragment_restore">Restaurar</string>
   <string name="ImportFragment_import_plaintext_backup">¿Importar copia de seguridad en texto plano?</string>
@@ -301,18 +301,18 @@ importarla de nuevo dará como resultado mensajes duplicados.</string>
   <string name="InviteActivity_sending">Enviando...</string>
   <string name="InviteActivity_heart_content_description">Corazón</string>
   <string name="InviteActivity_invitations_sent">¡Invitaciones enviadas!</string>
-  <string name="InviteActivity_invite_to_signal">Invitar a Signal</string>
+  <string name="InviteActivity_invite_to_signal">Invitar a %s</string>
   <plurals name="InviteActivity_send_sms_invites">
     <item quantity="one">¿Enviar 1 invitación SMS?</item>
     <item quantity="other">¿Enviar %d invitaciones SMS?</item>
   </plurals>
-  <string name="InviteActivity_lets_switch_to_signal">Pasémonos a Signal: %1$s</string>
+  <string name="InviteActivity_lets_switch_to_signal">Pasémonos a %2$s: %1$s</string>
   <string name="InviteActivity_no_app_to_share_to">Parece que no tiene ninguna aplicación con qué compartir.</string>
   <string name="InviteActivity_friends_dont_let_friends_text_unencrypted">Los verdaderos amigos no dejan que sus amigos hablen sin cifrar</string>
   <!--KeyScanningActivity-->
   <string name="KeyScanningActivity_no_scanned_key_found_exclamation">¡No se encontró una clave escaneada!</string>
   <string name="KeyScanningActivity_install_barcode_Scanner">¿Instalar Barcode Scanner?</string>
-  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">Signal necesita Barcode Scanner para códigos QR.</string>
+  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">%s necesita Barcode Scanner para códigos QR.</string>
   <!--MessageDetailsRecipient-->
   <string name="MessageDetailsRecipient_failed_to_send">Fallo al enviar</string>
   <string name="MessageDetailsRecipient_new_identity">Nueva identidad</string>
@@ -321,11 +321,11 @@ importarla de nuevo dará como resultado mensajes duplicados.</string>
   <string name="MmsDownloader_error_connecting_to_mms_provider">Error conectando al proveedor MMS...</string>
   <string name="MmsDownloader_error_reading_mms_settings">Error al leer la configuración MMS del proveedor...</string>
   <!--- NotificationBarManager-->
-  <string name="NotificationBarManager_signal_call_in_progress">Llamada de Signal en curso</string>
+  <string name="NotificationBarManager_signal_call_in_progress">Llamada de %s en curso</string>
   <string name="NotificationBarManager_missed_call_from_s">Llamada perdida de %s</string>
   <string name="NotificationBarManager_missed_signal_call">Llamada perdida de Signal</string>
-  <string name="NotificationBarManager__establishing_signal_call">Estableciendo llamada de Signal</string>
-  <string name="NotificationBarManager__incoming_signal_call">Llamada de Signal entrante</string>
+  <string name="NotificationBarManager__establishing_signal_call">Estableciendo llamada de %s</string>
+  <string name="NotificationBarManager__incoming_signal_call">Llamada de %s entrante</string>
   <string name="NotificationBarManager__deny_call">Denegar llamada</string>
   <string name="NotificationBarManager__answer_call">Contestar llamada</string>
   <string name="NotificationBarManager__end_call">Finalizar llamada</string>
@@ -333,13 +333,13 @@ importarla de nuevo dará como resultado mensajes duplicados.</string>
   <!--NotificationMmsMessageRecord-->
   <string name="NotificationMmsMessageRecord_multimedia_message">Mensaje multimedia</string>
   <!--MessageRecord-->
-  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Se ha recibido un mensaje encriptado usando una versión de Signal antigua que ya no está soportada. Por favor, avisa al quien te lo ha enviado para que actualice a la versión más reciente y reenvíe el mensaje.</string>
+  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Se ha recibido un mensaje encriptado usando una versión de %s antigua que ya no está soportada. Por favor, avisa al quien te lo ha enviado para que actualice a la versión más reciente y reenvíe el mensaje.</string>
   <string name="MessageRecord_left_group">Ha dejado el grupo.</string>
   <string name="MessageRecord_updated_group">Grupo actualizado.</string>
   <string name="MessageRecord_s_called_you">%s le llamó</string>
   <string name="MessageRecord_called_s">Llamó a %s</string>
   <string name="MessageRecord_missed_call_from">Llamada perdida de %s</string>
-  <string name="MessageRecord_s_is_on_signal_say_hey">¡%s esta en Signal, salúdele!</string>
+  <string name="MessageRecord_s_is_on_signal_say_hey">¡%1$s esta en %2$s, salúdele!</string>
   <string name="MessageRecord_you">Usted</string>
   <!--PassphraseChangeActivity-->
   <string name="PassphraseChangeActivity_passphrases_dont_match_exclamation">¡Las claves de acceso no coinciden!</string>
@@ -364,7 +364,7 @@ importarla de nuevo dará como resultado mensajes duplicados.</string>
   <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Lo sentimos, ya tiene demasiados dispositivos vinculados, pruebe a eliminar alguno...</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Lo sentimos , este código QR no es ​​válido .</string>
   <string name="DeviceProvisioningActivity_link_a_signal_device">¿Enlazar un dispositivo Signal?</string>
-  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Parece que estás intentando enlazar un dispositivo Signal usando un escáner de terceros. Para tu protección, por favor, escanea el código otra vez desde Signal.</string>
+  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Parece que estás intentando enlazar un dispositivo %1$s usando un escáner de terceros. Para tu protección, por favor, escanea el código otra vez desde %2$s.</string>
   <!--ExpirationDialog-->
   <!--PassphrasePromptActivity-->
   <string name="PassphrasePromptActivity_enter_passphrase">Introduzca clave de acceso</string>
@@ -410,7 +410,7 @@ importarla de nuevo dará como resultado mensajes duplicados.</string>
   <string name="RedPhone_the_number_you_dialed_does_not_support_secure_voice">¡El número que marcó no soporta llamada de voz segura!</string>
   <string name="RedPhone_got_it">Recibido</string>
   <!--RegistrationActivity-->
-  <string name="RegistrationActivity_connect_with_signal">Conectar con Signal</string>
+  <string name="RegistrationActivity_connect_with_signal">Conectar con %s</string>
   <string name="RegistrationActivity_select_your_country">Seleccione su país</string>
   <string name="RegistrationActivity_you_must_specify_your_country_code">Debe especificar su
 código de país
@@ -455,12 +455,12 @@ requieren una cuenta de Google, pero deben tener la aplicación Play Store insta
   <string name="RegistrationProgressActivity_too_many_requests">¡Demasiadas peticiones!</string>
   <string name="RegistrationProgressActivity_youve_already_requested_a_voice_call">Usted ya ha solicitado recientemente una llamada de voz. Puede pedir otra en 20 minutos.</string>
   <string name="RegistrationProgressActivity_registration_conflict">Confilicto al registrarse</string>
-  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Este número ya está registrado en un servidor Signal distinto (¿CyanogenMod?). Tiene que desregistrarse allí antes de registrarse aquí.</string>
+  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Este número ya está registrado en un servidor %s distinto (¿CyanogenMod?). Tiene que desregistrarse allí antes de registrarse aquí.</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">Registro completado</string>
-  <string name="RegistrationService_signal_registration_has_successfully_completed">El registro en Signal se ha completado con éxito.</string>
+  <string name="RegistrationService_signal_registration_has_successfully_completed">El registro en %s se ha completado con éxito.</string>
   <string name="RegistrationService_registration_error">Error al registrarse</string>
-  <string name="RegistrationService_signal_registration_has_encountered_a_problem">El registro en Signal se ha encontrado con un problema.</string>
+  <string name="RegistrationService_signal_registration_has_encountered_a_problem">El registro en %s se ha encontrado con un problema.</string>
   <!--Slide-->
   <string name="Slide_image">Imagen</string>
   <string name="Slide_audio">Audio</string>
@@ -484,7 +484,7 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <string name="ThreadRecord_called_you">Le llamaron</string>
   <string name="ThreadRecord_missed_call">Llamada perdida</string>
   <string name="ThreadRecord_media_message">Mensaje multimedia</string>
-  <string name="ThreadRecord_s_is_on_signal_say_hey">¡%s está en Signal, salúdele!</string>
+  <string name="ThreadRecord_s_is_on_signal_say_hey">¡%1$s está en %2$s, salúdele!</string>
   <!--VerifyIdentityActivity-->
   <string name="VerifyIdentityActivity_you_do_not_have_an_identity_key">No tiene ninguna clave de identidad.</string>
   <string name="VerifyIdentityActivity_recipient_has_no_identity_key">El destinatario no tiene clave de identidad.</string>
@@ -537,7 +537,7 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <!--KeyCachingService-->
   <string name="KeyCachingService_signal_passphrase_cached">Pulse para abrir.</string>
   <string name="KeyCachingService_signal_passphrase_cached_with_lock">Pulse para abrir, o pulse el candado para cerrar.</string>
-  <string name="KeyCachingService_passphrase_cached">Signal está desbloqueado</string>
+  <string name="KeyCachingService_passphrase_cached">%s está desbloqueado</string>
   <string name="KeyCachingService_lock">Bloquear con clave de acceso</string>
   <!--MessageNotifier-->
   <string name="MessageNotifier_d_new_messages_in_d_conversations">%1$d mensajes nuevos en %2$d conversaciones</string>
@@ -553,10 +553,10 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <string name="MessageNotifier_media_message">Mensaje multimedia</string>
   <string name="MessageNotifier_reply">Responder</string>
   <!--QuickResponseService-->
-  <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">¡La respuesta rápida no está disponible cuando Signal está bloqueado!</string>
+  <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">¡La respuesta rápida no está disponible cuando %s está bloqueado!</string>
   <string name="QuickResponseService_problem_sending_message">¡Hubo un problema al enviar el mensaje!</string>
   <!--SingleRecipientNotificationBuilder-->
-  <string name="SingleRecipientNotificationBuilder_signal">Signal</string>
+  <string name="SingleRecipientNotificationBuilder_signal">@string/app_name</string>
   <string name="SingleRecipientNotificationBuilder_new_message">Nuevo mensaje</string>
   <!--attachment_type_selector-->
   <string name="attachment_type_selector__image">Imagen</string>
@@ -585,7 +585,7 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Conversación silenciada</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Enviar mensaje de Signal</string>
+  <string name="conversation_activity__type_message_push">Enviar mensaje de %s</string>
   <string name="conversation_activity__type_message_sms_insecure">Enviar SMS no seguro</string>
   <string name="conversation_activity__type_message_mms_insecure">Enviar MMS no seguro</string>
   <string name="conversation_activity__from_sim_name">De %1$s</string>
@@ -648,7 +648,7 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <string name="import_fragment__import_system_sms_database">Importar base de datos de SMS del sistema</string>
   <string name="import_fragment__import_the_database_from_the_default_system">Importar la base de datos desde la aplicación de mensajería por defecto del sistema</string>
   <string name="import_fragment__restore_encrypted_backup">Restaurar copia de seguridad encriptada</string>
-  <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup">Recuperar una copia de seguridad ecriptada de Signal previamente exportada</string>
+  <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup">Recuperar una copia de seguridad ecriptada previamente exportada</string>
   <string name="import_fragment__import_plaintext_backup">Importar copia de seguridad en texto plano</string>
   <string name="import_fragment__import_a_plaintext_backup_file">Importar una copia de seguridad en texto plano. Compatible con \'SMS Backup &amp; Restore.\'</string>
   <!--load_more_header-->
@@ -675,7 +675,7 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <!--prompt_passphrase_activity-->
   <string name="prompt_passphrase_activity__unlock">Desbloquear</string>
   <!--prompt_mms_activity-->
-  <string name="prompt_mms_activity__signal_requires_mms_settings_to_deliver_media_and_group_messages">Signal requiere que la configuración de MMS envíe los mensajes audiovisuales y de grupo a través de su proveedor móvil. Su dispositivo no proporciona esta información, algo que ocasionalmente ocurre con dispositivos bloqueados y otras configuraciones restrictivas.</string>
+  <string name="prompt_mms_activity__signal_requires_mms_settings_to_deliver_media_and_group_messages">La aplicación requiere que la configuración de MMS envíe los mensajes audiovisuales y de grupo a través de su proveedor móvil. Su dispositivo no proporciona esta información, algo que ocasionalmente ocurre con dispositivos bloqueados y otras configuraciones restrictivas.</string>
   <string name="prompt_mms_activity__to_send_media_and_group_messages_tap_ok">Para enviar mensajes audiovisuales y de grupo, pulse \'Aceptar\' y complete las configuraciones solicitadas. Las configuraciones de MMS para su proveedor generalmente se pueden localizar buscando por \'el APN de su proveedor\'. Sólo necesitará hacer esto una vez.</string>
   <!--recipient_preferences_activity-->
   <string name="recipient_preference_activity__blocked">BLOQUEADO</string>
@@ -713,7 +713,7 @@ son:
   <string name="registration_problems__some_third_party_text_messaging_clients_such_as_handcent">
 Algunos clientes de mensajería de texto de terceros, tales como Handcent o GoSMS, se comportan pobremente e
 interceptan todos los mensajes SMS entrantes. Compruebe si recibió un mensaje de texto que comience
-con \'Su código de verificación de Signal:\', en cuyo caso necesitará configurar su aplicación de mensajería de texo de terceros para que permita pasar a los mensajes.</string>
+con \'Su código de verificación:\', en cuyo caso necesitará configurar su aplicación de mensajería de texo de terceros para que permita pasar a los mensajes.</string>
   <string name="registration_problems__incorrect_number">Número incorrecto.</string>
   <string name="registration_problems__please_checkt_to_make_sure_you_entered_your_number_correctly">
 Por favor asegúrese de que introdujo su número de teléfono correctamente y de que tiene el formato correcto

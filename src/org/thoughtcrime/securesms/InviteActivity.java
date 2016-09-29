@@ -83,7 +83,8 @@ public class InviteActivity extends PassphraseRequiredActionBarActivity implemen
     heart             = ViewUtil.findById(this, R.id.heart);
     contactsFragment  = (ContactSelectionListFragment)getSupportFragmentManager().findFragmentById(R.id.contact_selection_list_fragment);
 
-    inviteText.setText(getString(R.string.InviteActivity_lets_switch_to_signal, "https://sgnl.link/1KpeYmF"));
+    inviteText.setText(getString(R.string.InviteActivity_lets_switch_to_signal, "https://sgnl.link/1KpeYmF",
+            getString(R.string.app_name)));
     updateSmsButtonText();
 
     if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
@@ -148,7 +149,8 @@ public class InviteActivity extends PassphraseRequiredActionBarActivity implemen
       sendIntent.putExtra(Intent.EXTRA_TEXT, inviteText.getText().toString());
       sendIntent.setType("text/plain");
       if (sendIntent.resolveActivity(getPackageManager()) != null) {
-        startActivity(Intent.createChooser(sendIntent, getString(R.string.InviteActivity_invite_to_signal)));
+        startActivity(Intent.createChooser(sendIntent, getString(R.string.InviteActivity_invite_to_signal,
+                getString(R.string.app_name))));
       } else {
         Toast.makeText(InviteActivity.this, R.string.InviteActivity_no_app_to_share_to, Toast.LENGTH_LONG).show();
       }

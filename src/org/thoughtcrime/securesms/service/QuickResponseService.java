@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 
+import org.thoughtcrime.securesms.AppStringFormat;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.crypto.MasterSecret;
 import org.thoughtcrime.securesms.database.DatabaseFactory;
@@ -41,7 +42,7 @@ public class QuickResponseService extends MasterSecretIntentService {
 
     if (masterSecret == null) {
       Log.w(TAG, "Got quick response request when locked...");
-      Toast.makeText(this, R.string.QuickResponseService_quick_response_unavailable_when_Signal_is_locked, Toast.LENGTH_LONG).show();
+      Toast.makeText(this, AppStringFormat.format(this, R.string.QuickResponseService_quick_response_unavailable_when_Signal_is_locked), Toast.LENGTH_LONG).show();
       return;
     }
 

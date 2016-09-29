@@ -316,10 +316,12 @@ public class RegistrationService extends Service {
 
     if (success) {
       intent.putExtra(NOTIFICATION_TITLE, getString(R.string.RegistrationService_registration_complete));
-      intent.putExtra(NOTIFICATION_TEXT, getString(R.string.RegistrationService_signal_registration_has_successfully_completed));
+      intent.putExtra(NOTIFICATION_TEXT, getString(R.string.RegistrationService_signal_registration_has_successfully_completed,
+              getString(R.string.app_name)));
     } else {
       intent.putExtra(NOTIFICATION_TITLE, getString(R.string.RegistrationService_registration_error));
-      intent.putExtra(NOTIFICATION_TEXT, getString(R.string.RegistrationService_signal_registration_has_encountered_a_problem));
+      intent.putExtra(NOTIFICATION_TEXT, getString(R.string.RegistrationService_signal_registration_has_encountered_a_problem,
+              getString(R.string.app_name)));
     }
 
     this.sendOrderedBroadcast(intent, null);

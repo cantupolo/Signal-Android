@@ -141,10 +141,10 @@ public class GroupCreateActivity extends PassphraseRequiredActionBarActivity
     return TextSecurePreferences.isPushRegistered(this) && !getAdapter().hasNonPushMembers();
   }
 
-  private void disableSignalGroupViews(int reasonResId) {
+  private void disableSignalGroupViews(String reasonRes) {
     View pushDisabled = findViewById(R.id.push_disabled);
     pushDisabled.setVisibility(View.VISIBLE);
-    ((TextView) findViewById(R.id.push_disabled_reason)).setText(reasonResId);
+    ((TextView) findViewById(R.id.push_disabled_reason)).setText(reasonRes);
     avatar.setEnabled(false);
     groupName.setEnabled(false);
   }
@@ -158,10 +158,11 @@ public class GroupCreateActivity extends PassphraseRequiredActionBarActivity
   @SuppressWarnings("ConstantConditions")
   private void updateViewState() {
     if (!TextSecurePreferences.isPushRegistered(this)) {
-      disableSignalGroupViews(R.string.GroupCreateActivity_youre_not_registered_for_signal);
+      String appName = getString(R.string.app_name);
+      disableSignalGroupViews(getString(R.string.GroupCreateActivity_youre_not_registered_for_signal, appName, appName));
       getSupportActionBar().setTitle(R.string.GroupCreateActivity_actionbar_mms_title);
     } else if (getAdapter().hasNonPushMembers()) {
-      disableSignalGroupViews(R.string.GroupCreateActivity_contacts_dont_support_push);
+      disableSignalGroupViews(AppStringFormat.format(this, R.string.GroupCreateActivity_contacts_dont_support_push));
       getSupportActionBar().setTitle(R.string.GroupCreateActivity_actionbar_mms_title);
     } else {
       enableSignalGroupViews();
@@ -513,7 +514,7 @@ public class GroupCreateActivity extends PassphraseRequiredActionBarActivity
 
         if (failIfNotPush && !isPush) {
           results.add(new Result(null, false, activity.getString(R.string.GroupCreateActivity_cannot_add_non_push_to_existing_group,
-                                                                 recipient.getNumber())));
+                                                                 recipient.getNumber(), activity.getString(R.string.app_name))));
         } else if (TextUtils.equals(TextSecurePreferences.getLocalNumber(activity), recipientE164)) {
           results.add(new Result(null, false, activity.getString(R.string.GroupCreateActivity_youre_already_in_the_group)));
         } else {

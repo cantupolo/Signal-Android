@@ -59,7 +59,8 @@ public class RegistrationActivity extends BaseActionBarActivity {
     super.onCreate(icicle);
     setContentView(R.layout.registration_activity);
 
-    getSupportActionBar().setTitle(getString(R.string.RegistrationActivity_connect_with_signal));
+    getSupportActionBar().setTitle(getString(R.string.RegistrationActivity_connect_with_signal,
+            getString(R.string.app_name)));
 
     initializeResources();
     initializeSpinner();

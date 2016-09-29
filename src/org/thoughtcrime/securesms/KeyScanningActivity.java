@@ -17,7 +17,6 @@
 package org.thoughtcrime.securesms;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -26,7 +25,6 @@ import android.widget.Toast;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
-import org.thoughtcrime.securesms.crypto.MasterSecret;
 import org.thoughtcrime.securesms.util.Base64;
 import org.thoughtcrime.securesms.util.Dialogs;
 import org.thoughtcrime.securesms.util.DynamicLanguage;
@@ -107,7 +105,8 @@ public abstract class KeyScanningActivity extends PassphraseRequiredActionBarAct
     intentIntegrator.setButtonYesByID(R.string.yes);
     intentIntegrator.setButtonNoByID(R.string.no);
     intentIntegrator.setTitleByID(R.string.KeyScanningActivity_install_barcode_Scanner);
-    intentIntegrator.setMessageByID(R.string.KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it);
+    intentIntegrator.setMessage(AppStringFormat.format(this,
+            R.string.KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it));
     return intentIntegrator;
   }
 

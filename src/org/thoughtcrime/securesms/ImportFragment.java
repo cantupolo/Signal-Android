@@ -83,7 +83,8 @@ public class ImportFragment extends Fragment {
     AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
     builder.setIconAttribute(R.attr.dialog_info_icon);
     builder.setTitle(getActivity().getString(R.string.ImportFragment_import_system_sms_database));
-    builder.setMessage(getActivity().getString(R.string.ImportFragment_this_will_import_messages_from_the_system));
+    builder.setMessage(getActivity().getString(R.string.ImportFragment_this_will_import_messages_from_the_system,
+            getActivity().getString(R.string.app_name)));
     builder.setPositiveButton(getActivity().getString(R.string.ImportFragment_import), new AlertDialog.OnClickListener() {
       @Override
       public void onClick(DialogInterface dialog, int which) {
@@ -107,7 +108,8 @@ public class ImportFragment extends Fragment {
     AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
     builder.setIconAttribute(R.attr.dialog_alert_icon);
     builder.setTitle(getActivity().getString(R.string.ImportFragment_restore_encrypted_backup));
-    builder.setMessage(getActivity().getString(R.string.ImportFragment_restoring_an_encrypted_backup_will_completely_replace_your_existing_keys));
+    builder.setMessage(getActivity().getString(R.string.ImportFragment_restoring_an_encrypted_backup_will_completely_replace_your_existing_keys,
+            getActivity().getString(R.string.app_name)));
     builder.setPositiveButton(getActivity().getString(R.string.ImportFragment_restore), new AlertDialog.OnClickListener() {
       @Override
       public void onClick(DialogInterface dialog, int which) {

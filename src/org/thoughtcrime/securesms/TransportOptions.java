@@ -121,7 +121,8 @@ public class TransportOptions {
     results.add(new TransportOption(Type.TEXTSECURE, R.drawable.ic_send_push_white_24dp,
                                     context.getResources().getColor(R.color.textsecure_primary),
                                     context.getString(R.string.ConversationActivity_transport_signal),
-                                    context.getString(R.string.conversation_activity__type_message_push),
+                                    context.getString(R.string.conversation_activity__type_message_push,
+                                            context.getString(R.string.app_name)),
                                     new PushCharacterCalculator()));
 
     return results;

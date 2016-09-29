@@ -322,7 +322,8 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
   private void handleMultiRegistrationError(RegistrationState state) {
     handleVerificationTimeout(state);
     Dialogs.showAlertDialog(this,                         getString(R.string.RegistrationProgressActivity_registration_conflict),
-                         getString(R.string.RegistrationProgressActivity_this_number_is_already_registered_on_a_different));
+                         getString(R.string.RegistrationProgressActivity_this_number_is_already_registered_on_a_different,
+                                 getString(R.string.app_name)));
   }
 
   private void handleVerificationComplete() {
@@ -510,7 +511,8 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
               break;
             case MULTI_REGISTRATION_ERROR:
               Dialogs.showAlertDialog(context, getString(R.string.RegistrationProgressActivity_registration_conflict),
-                                   getString(R.string.RegistrationProgressActivity_this_number_is_already_registered_on_a_different));
+                                   getString(R.string.RegistrationProgressActivity_this_number_is_already_registered_on_a_different,
+                                           getString(R.string.app_name)));
               break;
           }
         }

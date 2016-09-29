@@ -237,7 +237,8 @@ public class KeyCachingService extends Service {
     Log.w("KeyCachingService", "foregrounding KCS");
     NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
 
-    builder.setContentTitle(getString(R.string.KeyCachingService_passphrase_cached));
+    builder.setContentTitle(getString(R.string.KeyCachingService_passphrase_cached,
+            getString(R.string.app_name)));
     builder.setContentText(getString(R.string.KeyCachingService_signal_passphrase_cached));
     builder.setSmallIcon(R.drawable.icon_cached);
     builder.setWhen(0);
@@ -269,7 +270,8 @@ public class KeyCachingService extends Service {
                                                   getString(R.string.KeyCachingService_signal_passphrase_cached),
                                                   System.currentTimeMillis());
     notification.setLatestEventInfo(getApplicationContext(),
-                                    getString(R.string.KeyCachingService_passphrase_cached),
+                                    getString(R.string.KeyCachingService_passphrase_cached,
+                                            getString(R.string.app_name)),
                                     getString(R.string.KeyCachingService_signal_passphrase_cached),
                                     buildLaunchIntent());
     notification.tickerText = null;

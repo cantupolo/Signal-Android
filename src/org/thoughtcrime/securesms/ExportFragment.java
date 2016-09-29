@@ -75,7 +75,8 @@ public class ExportFragment extends Fragment {
     AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
     builder.setIconAttribute(R.attr.dialog_alert_icon);
     builder.setTitle(getActivity().getString(R.string.ExportFragment_export_plaintext_to_storage));
-    builder.setMessage(getActivity().getString(R.string.ExportFragment_warning_this_will_export_the_plaintext_contents));
+    builder.setMessage(getActivity().getString(R.string.ExportFragment_warning_this_will_export_the_plaintext_contents,
+            getActivity().getString(R.string.app_name)));
     builder.setPositiveButton(getActivity().getString(R.string.ExportFragment_export), new Dialog.OnClickListener() {
       @Override
       public void onClick(DialogInterface dialog, int which) {
