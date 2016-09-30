@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Signal</string>
+    <string name="app_name">Iris Text Messenger</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="delete">Delete</string>
@@ -849,7 +849,7 @@
 
     <!-- registration_activity -->
     <string name="registration_activity__verify_your_number_to_connect_with_signal">
-        Verify your phone number to connect with Signal.
+        Verify your phone number to connect.
     </string>
     <string name="registration_activity__your_country">YOUR COUNTRY</string>
     <string name="registration_activity__your_country_code_and_phone_number">YOUR COUNTRY CODE AND
@@ -891,7 +891,7 @@
     <string name="registration_progress_activity__call_me">Call me</string>
     <string name="registration_progress_activity__edit_number">Edit number</string>
     <string name="registration_progress_activity__connectivity_error">Connectivity error.</string>
-    <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">Signal was unable to connect to the server.</string>
+    <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">Unable to connect to the server.</string>
     <string name="registration_progress_activity__some_possible_problems_include">Some possible
         problems include:
     </string>
@@ -899,17 +899,17 @@
         connectivity.
     </string>
     <string name="registration_progress_activity__your_device_needs_network_connectivity">Your
-        device needs network connectivity in order to use this Signal feature. Check to ensure
+        device needs network connectivity in order to use this feature. Check to ensure
         that it is connected to mobile data or Wi-Fi.
     </string>
     <string name="registration_progress_activity__restrictive_firewall">Restrictive firewall.
     </string>
     <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
         If you are connected via Wi-Fi, it\'s possible that there is a firewall blocking access to
-        the Signal server. Try another network or mobile data.
+        the server. Try another network or mobile data.
     </string>
     <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
-        Signal will now automatically verify your number with a confirmation SMS message.
+        The application will now automatically verify your number with a confirmation SMS message.
     </string>
     <string name="registration_progress_activity__connecting">Connecting...</string>
     <string name="registration_progress_activity__waiting_for_sms_verification">Waiting for SMS
@@ -920,7 +920,7 @@
         could take a moment. Please be patient, we\'ll notify you when verification is complete.
     </string>
     <string name="registration_progress_activity__signal_timed_out_while_waiting_for_a_verification_sms_message">
-        Signal timed out while waiting for a verification SMS message.
+        The application timed out while waiting for a verification SMS message.
     </string>
     <string name="registration_progress_activity__sms_verification_failed">SMS verification
         failed.
@@ -1012,16 +1012,16 @@
     <string name="preferences__change_passphrase">Change passphrase</string>
     <string name="preferences__change_your_passphrase">Change your passphrase</string>
     <string name="preferences__enable_passphrase">Enable passphrase</string>
-    <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Lock Signal and message notifications with a passphrase</string>
+    <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Lock notifications with a passphrase</string>
     <string name="preferences__screen_security">Screen security</string>
     <string name="preferences__disable_screen_security_to_allow_screen_shots">Block screenshots in the recents list and inside the app</string>
-    <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Auto-lock Signal after a specified time interval of inactivity</string>
+    <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Auto-lock after a specified time interval of inactivity</string>
     <string name="preferences__inactivity_timeout_passphrase">Inactivity timeout passphrase</string>
     <string name="preferences__inactivity_timeout_interval">Inactivity timeout interval</string>
     <string name="preferences__notifications">Notifications</string>
     <string name="preferences__enable_message_notifications">Enable message notifications</string>
     <string name="preferences__new_contacts_notifications">New contacts notifications</string>
-    <string name="preferences__show_a_notification_for_new_signal_contacts">Show a notification for new Signal contacts</string>
+    <string name="preferences__show_a_notification_for_new_signal_contacts">Show a notification for new contacts</string>
     <string name="preferences__led_color">LED color</string>
     <string name="preferences__led_color_unknown">Unknown</string>
     <string name="preferences__pref_led_blink_title">LED blink pattern</string>
@@ -1083,8 +1083,8 @@
     <string name="preferences__theme">Theme</string>
     <string name="preferences__default">Default</string>
     <string name="preferences__language">Language</string>
-    <string name="preferences__signal_messages_and_calls">Signal messages and calls</string>
-    <string name="preferences__free_private_messages_and_calls">Free private messages and calls to Signal users</string>
+    <string name="preferences__signal_messages_and_calls">Messages</string>
+    <string name="preferences__free_private_messages_and_calls">Free private messages to users</string>
     <string name="preferences__submit_debug_log">Submit debug log</string>
     <string name="preferences__support_wifi_calling">\'WiFi Calling\' compatibility mode</string>
     <string name="preferences__enable_if_your_device_supports_sms_mms_delivery_over_wifi">Enable if your device uses SMS/MMS delivery over WiFi (only enable when \'WiFi Calling\' is enabled on your device)</string>
@@ -1096,7 +1096,7 @@
     <string name="preferences_chats__media_auto_download">Media auto-download</string>
     <string name="preferences_chats__message_trimming">Message trimming</string>
     <string name="preferences_advanced__use_system_emoji">Use system emoji</string>
-    <string name="preferences_advanced__disable_signal_built_in_emoji_support">Disable Signal\'s built-in emoji support</string>
+    <string name="preferences_advanced__disable_signal_built_in_emoji_support">Disable built-in emoji support</string>
 
     <!-- **************************************** -->
     <!-- menus -->
@@ -1105,7 +1105,7 @@
     <!-- contact_selection_list -->
     <string name="contact_selection_list__menu_select_all">Select all</string>
     <string name="contact_selection_list__menu_unselect_all">Unselect all</string>
-    <string name="contact_selection_list__header_signal_users">SIGNAL USERS</string>
+    <string name="contact_selection_list__header_signal_users">USERS</string>
     <string name="contact_selection_list__header_other">ALL CONTACTS</string>
     <string name="contact_selection_list__unknown_contact">New message to...</string>
 
@@ -1206,29 +1206,29 @@
     <string name="text_secure_normal__help">Help</string>
 
     <!-- reminder_header -->
-    <string name="reminder_header_outdated_build">Your version of Signal is outdated</string>
+    <string name="reminder_header_outdated_build">Your version of %s is outdated</string>
     <plurals name="reminder_header_outdated_build_details">
-        <item quantity="one">Your version of Signal will expire in 1 day. Tap to update to the most recent version.</item>
-        <item quantity="other">Your version of Signal will expire in %d days. Tap to update to the most recent version.</item>
+        <item quantity="one">Your version of this application will expire in 1 day. Tap to update to the most recent version.</item>
+        <item quantity="other">Your version of this application will expire in %d days. Tap to update to the most recent version.</item>
     </plurals>
-    <string name="reminder_header_outdated_build_details_today">Your version of Signal will expire today. Tap to update to the most recent version.</string>
-    <string name="reminder_header_expired_build">Your version of Signal has expired!</string>
+    <string name="reminder_header_outdated_build_details_today">Your version of %s will expire today. Tap to update to the most recent version.</string>
+    <string name="reminder_header_expired_build">Your version of %s has expired!</string>
     <string name="reminder_header_expired_build_details">Messages will no longer send successfully. Tap to update to the most recent version.</string>
     <string name="reminder_header_expired_build_button">UPDATE</string>
     <string name="reminder_header_sms_default_title">Use as default SMS app</string>
-    <string name="reminder_header_sms_default_text">Tap to make Signal your default SMS app.</string>
+    <string name="reminder_header_sms_default_text">Tap to make %s your default SMS app.</string>
     <string name="reminder_header_sms_default_button">SET</string>
     <string name="reminder_header_sms_import_title">Import system SMS</string>
-    <string name="reminder_header_sms_import_text">Tap to copy your phone\'s SMS messages into Signal\'s encrypted database.</string>
+    <string name="reminder_header_sms_import_text">Tap to copy your phone\'s SMS messages into %s\'s encrypted database.</string>
     <string name="reminder_header_sms_import_button">IMPORT</string>
-    <string name="reminder_header_push_title">Enable Signal messages and calls</string>
+    <string name="reminder_header_push_title">Enable %s messages</string>
     <string name="reminder_header_push_text">Upgrade your communication experience.</string>
     <string name="reminder_header_push_button">ENABLE</string>
-    <string name="reminder_header_invite_title">Invite to Signal</string>
+    <string name="reminder_header_invite_title">Invite to %s</string>
     <string name="reminder_header_invite_text">Take your conversation with %1$s to the next level.</string>
     <string name="reminder_header_invite_button">INVITE</string>
     <string name="reminder_header_share_title">Invite your friends!</string>
-    <string name="reminder_header_share_text">The more friends use Signal, the better it gets.</string>
+    <string name="reminder_header_share_text">The more friends use %s, the better it gets.</string>
     <string name="reminder_header_share_button">SHARE</string>
     <string name="reminder_header_close_button">CLOSE</string>
 

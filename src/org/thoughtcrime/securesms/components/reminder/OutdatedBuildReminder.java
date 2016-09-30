@@ -11,7 +11,7 @@ import org.thoughtcrime.securesms.util.Util;
 public class OutdatedBuildReminder extends Reminder {
 
   public OutdatedBuildReminder(final Context context) {
-    super(context.getString(R.string.reminder_header_outdated_build),
+    super(context.getString(R.string.reminder_header_outdated_build, context.getString(R.string.app_name)),
           getPluralsText(context));
     setOkListener(new View.OnClickListener() {
       @Override
@@ -28,7 +28,7 @@ public class OutdatedBuildReminder extends Reminder {
   private static CharSequence getPluralsText(final Context context) {
     int days = Util.getDaysTillBuildExpiry() - 1;
     if (days == 0) {
-      return context.getString(R.string.reminder_header_outdated_build_details_today);
+      return context.getString(R.string.reminder_header_outdated_build_details_today, context.getString(R.string.app_name));
     }
     return context.getResources().getQuantityString(R.plurals.reminder_header_outdated_build_details, days, days);
   }

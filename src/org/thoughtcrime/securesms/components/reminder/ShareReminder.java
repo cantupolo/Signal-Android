@@ -16,7 +16,7 @@ public class ShareReminder extends Reminder {
 
   public ShareReminder(final @NonNull Context context) {
     super(context.getString(R.string.reminder_header_share_title),
-          context.getString(R.string.reminder_header_share_text));
+          context.getString(R.string.reminder_header_share_text, context.getString(R.string.app_name)));
 
     setDismissListener(new OnClickListener() {
       @Override public void onClick(View v) {

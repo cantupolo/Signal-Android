@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Signal</string>
+  <string name="app_name">Iris Text Messenger</string>
   <string name="yes">Sí</string>
   <string name="no">No</string>
   <string name="delete">Borrar</string>
@@ -696,7 +696,7 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <string name="redphone_call_controls__signal_call">Llamada de Signal</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
-Verifique su número de teléfono móvil para conectar con Signal.</string>
+Verifique su número de teléfono móvil para conectar.</string>
   <string name="registration_activity__your_country">SU PAÍS</string>
   <string name="registration_activity__your_country_code_and_phone_number">SU CÓDIGO DE PAÍS Y
 NÚMERO DE TELÉFONO
@@ -730,7 +730,7 @@ Signal también puede llamarle para verificar su número. Pulse \'Llamarme\' e i
   <string name="registration_progress_activity__call_me">Llamarme</string>
   <string name="registration_progress_activity__edit_number">Editar número</string>
   <string name="registration_progress_activity__connectivity_error">Fallo de conectividad.</string>
-  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">Signal no pudo conectar con el servidor.</string>
+  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">No se pudo conectar con el servidor.</string>
   <string name="registration_progress_activity__some_possible_problems_include">Algunos posibles
 problemas son:
 
@@ -739,15 +739,15 @@ problemas son:
 a la red.
     </string>
   <string name="registration_progress_activity__your_device_needs_network_connectivity">Tu
-dispositivo necesita estar conectado para poder usar esta característica de Signal. Comprueba
+dispositivo necesita estar conectado para poder usar esta característica. Comprueba
 que está conectado a datos móviles o por Wi-Fi.
  </string>
   <string name="registration_progress_activity__restrictive_firewall">Cortafuegos restrictivo.
 </string>
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
-Si está conectado vía Wi-Fi, es posible que haya un cortafuegos (firewall) bloqueando el acceso al servidor Signal. Pruebe con otra red o con la conexión de datos móvil.</string>
+Si está conectado vía Wi-Fi, es posible que haya un cortafuegos (firewall) bloqueando el acceso al servidor. Pruebe con otra red o con la conexión de datos móvil.</string>
   <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
-Signal ahora verificará automáticamente su número con un mensaje SMS de confirmación.</string>
+La aplicación ahora verificará automáticamente su número con un mensaje SMS de confirmación.</string>
   <string name="registration_progress_activity__connecting">Conectando...</string>
   <string name="registration_progress_activity__waiting_for_sms_verification">Esperando al SMS
 de verificación...
@@ -758,7 +758,7 @@ podría llevar un rato. Por favor, tenga paciencia, le notificaremos cuando su v
 
     </string>
   <string name="registration_progress_activity__signal_timed_out_while_waiting_for_a_verification_sms_message">
-Signal agotó el periodo de espera para un mensaje SMS de verificación.</string>
+La aplicación agotó el periodo de espera para un mensaje SMS de verificación.</string>
   <string name="registration_progress_activity__sms_verification_failed">Fallo en la verificación
 por SMS.
 
@@ -839,16 +839,16 @@ por SMS.
   <string name="preferences__change_passphrase">Cambiar clave de acceso</string>
   <string name="preferences__change_your_passphrase">Cambiar su frase de contraseña</string>
   <string name="preferences__enable_passphrase">Habilitar clave de acceso</string>
-  <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Bloquear Signal y notificaciones de mensajes con una frase-contraseña</string>
+  <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Bloquear notificaciones con una frase-contraseña</string>
   <string name="preferences__screen_security">Seguridad de la pantalla</string>
   <string name="preferences__disable_screen_security_to_allow_screen_shots">Bloquear capturas de pantalla en la lista de aplicaciones recientes y dentro de la aplicación</string>
-  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Bloquear automáticamente Signal tras un intervalo de inactividad específicado</string>
+  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Bloquear automáticamente tras un intervalo de inactividad específicado</string>
   <string name="preferences__inactivity_timeout_passphrase">Frase-contraseña para suspensión por inactividad</string>
   <string name="preferences__inactivity_timeout_interval">Intervalo para suspensión por inactividad</string>
   <string name="preferences__notifications">Notificaciones</string>
   <string name="preferences__enable_message_notifications">Habilitar notificaciones de mensaje</string>
   <string name="preferences__new_contacts_notifications">Notificaciones de nuevos contactos</string>
-  <string name="preferences__show_a_notification_for_new_signal_contacts">Mostrar una notificación para nuevos contactos de Signal</string>
+  <string name="preferences__show_a_notification_for_new_signal_contacts">Mostrar una notificación para nuevos contactos</string>
   <string name="preferences__led_color">Color del LED</string>
   <string name="preferences__led_color_unknown">Desconocido</string>
   <string name="preferences__pref_led_blink_title">Patrón de parpadeo del LED</string>
@@ -910,8 +910,8 @@ por SMS.
   <string name="preferences__theme">Tema</string>
   <string name="preferences__default">Por defecto</string>
   <string name="preferences__language">Idioma</string>
-  <string name="preferences__signal_messages_and_calls">Signal mensajes y llamadas</string>
-  <string name="preferences__free_private_messages_and_calls">Llamadas y mensajes privados gratuitos para los usuarios de Signal</string>
+  <string name="preferences__signal_messages_and_calls">Mensajes</string>
+  <string name="preferences__free_private_messages_and_calls">Mensajes privados gratuitos para los usuarios</string>
   <string name="preferences__submit_debug_log">Enviar registro de depuración</string>
   <string name="preferences__support_wifi_calling">Modo de compatibilidad \'Llamada por WiFi\'</string>
   <string name="preferences__enable_if_your_device_supports_sms_mms_delivery_over_wifi">Habilítelo si su dispositivo utiliza entrega de SMS/MMS vía WiFi (actívelo sólo cuando \'Llamada por WiFi\' esté activada en su dispositivo)</string>
@@ -923,14 +923,14 @@ por SMS.
   <string name="preferences_chats__media_auto_download">Auto-descarga de audiovisuales</string>
   <string name="preferences_chats__message_trimming">Recortado de mensaje</string>
   <string name="preferences_advanced__use_system_emoji">Usar emoji del sistema</string>
-  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Deshabilitar soporte de emoji integrado de Signal</string>
+  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Deshabilitar soporte de emoji integrado</string>
   <!--****************************************-->
   <!--menus-->
   <!--****************************************-->
   <!--contact_selection_list-->
   <string name="contact_selection_list__menu_select_all">Seleccionar todos</string>
   <string name="contact_selection_list__menu_unselect_all">Deseleccionar todos</string>
-  <string name="contact_selection_list__header_signal_users">USUARIOS DE SIGNAL</string>
+  <string name="contact_selection_list__header_signal_users">USUARIOS</string>
   <string name="contact_selection_list__header_other">TODOS LOS CONTACTOS</string>
   <string name="contact_selection_list__unknown_contact">Nuevo mensaje para...</string>
   <!--contact_selection-->
@@ -1005,29 +1005,29 @@ por SMS.
   <string name="text_secure_normal__invite_friends">Invitar amigos</string>
   <string name="text_secure_normal__help">Ayuda</string>
   <!--reminder_header-->
-  <string name="reminder_header_outdated_build">Su versión de Signal está anticuada</string>
+  <string name="reminder_header_outdated_build">Su versión de %s está anticuada</string>
   <plurals name="reminder_header_outdated_build_details">
-    <item quantity="one">Su versión de Signal caducará en 1 día. Pulse para actualizarla a la versión más reciente.</item>
-    <item quantity="other">Su versión de Signal caducará en %d días. Pulse para actualizarla a la versión más reciente.</item>
+    <item quantity="one">Su versión desta aplicación caducará en 1 día. Pulse para actualizarla a la versión más reciente.</item>
+    <item quantity="other">Su versión desta aplicación caducará en %d días. Pulse para actualizarla a la versión más reciente.</item>
   </plurals>
-  <string name="reminder_header_outdated_build_details_today">Su versión de Signal caduca hoy. Pulse para actualizarla a la versión más reciente.</string>
-  <string name="reminder_header_expired_build">¡Su versión de Signal ha caducado!</string>
+  <string name="reminder_header_outdated_build_details_today">Su versión de %s caduca hoy. Pulse para actualizarla a la versión más reciente.</string>
+  <string name="reminder_header_expired_build">¡Su versión de %s ha caducado!</string>
   <string name="reminder_header_expired_build_details">Los mensajes ya no se mandarán exitosamente. Pulse para actualizar a la versión más reciente.</string>
   <string name="reminder_header_expired_build_button">ACTUALIZAR</string>
   <string name="reminder_header_sms_default_title">Usar como aplicación de SMS predeterminada</string>
-  <string name="reminder_header_sms_default_text">Pulse para hacer de Signal su aplicación de SMS predeterminada.</string>
+  <string name="reminder_header_sms_default_text">Pulse para hacer de %s su aplicación de SMS predeterminada.</string>
   <string name="reminder_header_sms_default_button">AJUSTAR</string>
   <string name="reminder_header_sms_import_title">Importar SMS del sistema</string>
-  <string name="reminder_header_sms_import_text">Pulse para copiar los mensajes SMS de su teléfono a la base de datos cifrada de Signal.</string>
+  <string name="reminder_header_sms_import_text">Pulse para copiar los mensajes SMS de su teléfono a la base de datos cifrada de %s.</string>
   <string name="reminder_header_sms_import_button">IMPORTAR</string>
-  <string name="reminder_header_push_title">Activar Signal mensajes y llamadas</string>
+  <string name="reminder_header_push_title">Activar %s mensajes y llamadas</string>
   <string name="reminder_header_push_text">Actualiza tu experiencia comunicativa</string>
   <string name="reminder_header_push_button">HABILITAR</string>
-  <string name="reminder_header_invite_title">Invitar a Signal</string>
+  <string name="reminder_header_invite_title">Invitar a %s</string>
   <string name="reminder_header_invite_text">Lleva su conversación con %1$s al siguiente nivel.</string>
   <string name="reminder_header_invite_button">INVITAR</string>
   <string name="reminder_header_share_title">¡Invite a sus amigos!</string>
-  <string name="reminder_header_share_text">Cuantos amigos más usen Signal, mejor será.</string>
+  <string name="reminder_header_share_text">Cuantos amigos más usen %s, mejor será.</string>
   <string name="reminder_header_share_button">COMPARTIR</string>
   <string name="reminder_header_close_button">CERRAR</string>
   <!--MediaPreviewActivity-->

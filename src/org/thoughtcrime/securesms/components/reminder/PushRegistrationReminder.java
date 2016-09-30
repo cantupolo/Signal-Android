@@ -13,7 +13,7 @@ import org.thoughtcrime.securesms.crypto.MasterSecret;
 public class PushRegistrationReminder extends Reminder {
 
   public PushRegistrationReminder(final Context context, final MasterSecret masterSecret) {
-    super(context.getString(R.string.reminder_header_push_title),
+    super(context.getString(R.string.reminder_header_push_title, context.getString(R.string.app_name)),
           context.getString(R.string.reminder_header_push_text));
 
     final OnClickListener okListener = new OnClickListener() {
